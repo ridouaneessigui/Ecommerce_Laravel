@@ -3,12 +3,12 @@
     PRODUITs
 @endsection
 @section('contenu')
-<h1>L ' Ensemble De Nos Produits</h1>
+<h1 style="margin-left: 50px">Nos Produits</h1>
     @foreach ($produits as $produit)
-        <div class="well">
-            <h3>{{ $produit->nom_produit }}</h3>
-            <h3>{{ $produit->prix }}</h3>
-            <h3>{{ $produit->description }}</h3>
+        <div class="well well-md-min - 1" style="padding-right: 500px">
+            <h4 >{{ $produit->nom_produit }}</h4>
+            <p >{{ $produit->description }}</p>
+            <small>{{ $produit->prix }}</small>
         </div>
     @endforeach
 @endsection
