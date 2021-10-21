@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\produit;
 use Illuminate\Http\Request;
-
+use DB;
 class PagesController extends Controller
 {
     public function panier () {
@@ -13,7 +13,9 @@ class PagesController extends Controller
                 return view('pages.home');
             }
     public function produit () {
-                return view('pages.produit');
+        $produits = DB::table('produits')
+                 ->get();
+                return view('pages.produit')->with('produits', $produits);
             }        
     public function user () {
                 return view('pages.user');

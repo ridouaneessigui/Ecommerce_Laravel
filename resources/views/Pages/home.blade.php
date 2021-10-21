@@ -2,3 +2,6 @@
 @section('titre')
     Home
 @endsection
+@section('contenu')
+
+@endsection
