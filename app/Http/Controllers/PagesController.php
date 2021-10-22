@@ -15,6 +15,8 @@ class PagesController extends Controller
     public function produit () {
         $produits = DB::table('produits')
                  ->get();
+        $produits=DB::table('produits')
+            ->paginate(1);
                 return view('pages.produit')->with('produits', $produits);
             }        
     public function user () {
