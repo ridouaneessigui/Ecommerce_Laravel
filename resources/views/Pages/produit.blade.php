@@ -14,11 +14,12 @@
             <small>{{ $produit->prix }}</small>
             </div>
             <div class="col-md-4">
-
-                <img src="{{URL::asset('/image/$produit->imageName')}}" height="200" width="200" style="">
+                <img src="{{URL::asset('/image/' . $produit->nom_image. '')}}" height="200" width="200" style="">
             </div>
                 <div class="col-md-2">
                 <button type="button" class="btn btn-info" >+</button>
+                <button type="button" class="btn btn-danger" >-</button>
+
             </div>
             
          </div>
