@@ -9,6 +9,7 @@
             <h4 >{{ $produit->nom_produit }}</h4>
             <p >{{ $produit->description }}</p>
             <small>{{ $produit->prix }}</small>
+            <button type="button" class="btn btn-info" style="margin-left: 170%">+</button>
         </div>
     @endforeach
 @endsection
